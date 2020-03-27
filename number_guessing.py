@@ -1,6 +1,5 @@
 from random import randint
 
-
 def game(num, score):
     while score > 0:
         print("Você tem %d vida(s)" %(score))
@@ -18,7 +17,7 @@ def game(num, score):
             print("Fim de jogo!")
             break
     else:
-        return print("\nVocê perdeu!\nFim de jogo!")
+        return print("\nVocê perdeu!\nNúmero mágico: %d\nFim de jogo!" %(num))
             
 
 print("*** Iniciando jogo ***")
