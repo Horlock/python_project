@@ -9,8 +9,10 @@ conversa = ['Oi', 'Olá',
             'Quantos anos você tem?', '21',
             'Onde você mora?', 'Sorocaba']
 
+
 trainer = ListTrainer(bot) 
 trainer.train(conversa)
+
 
 while True:
     pergunta = input("Você: ")

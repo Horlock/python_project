@@ -1,5 +1,6 @@
 from random import randint
 
+
 def game(num, score):
     while score > 0:
         print("Você tem %d vida(s)" %(score))
@@ -22,6 +23,7 @@ def game(num, score):
 
 print("*** Iniciando jogo ***")
 
+
 print("\nDigite a dificuldade:\
       \n# 1 - Fácil\
       \n# 2 - Médio\
@@ -34,5 +36,6 @@ elif dificuldade == 2:
     score = 5
 elif dificuldade == 3:
     score = 3
+
     
 game(randint(1, 100), score)

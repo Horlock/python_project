@@ -3,13 +3,14 @@ vector = [1, 2, 3, 4, 5, 8, 9, 10, 11, 12, 13, 14, 15, 16, \
         50, 51, 53, 55, 58, 62, 64, 68, 69, 71, 72, 73, 74, 75, \
         78, 79, 81, 82, 84, 85, 87, 88, 89, 91, 92, 93, 94, 95, 100]
 
+
 def binSearch(vector, value):
     start = 0
     end = len(vector) - 1
     while (start <= end):
         mid = (start + end) // 2
         if(vector[mid] == value):
-            return print("Valor: %d\nÍndice: %d" %(vector[mid], mid))
+            return print("Number: %d\nIndex: %d" %(vector[mid], mid))
         elif (vector[mid] < value):
             start = mid + 1
         elif (vector[mid] > value):
@@ -17,6 +18,9 @@ def binSearch(vector, value):
     else:
         return print('-1')
 
-value = int(input("Digite um valor (inteiro) a ser procurado: "))
+
+
+value = int(input("Type a number for the search: "))
+
 
 binSearch(vector, value)
