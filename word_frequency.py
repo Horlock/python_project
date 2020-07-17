@@ -2,7 +2,7 @@ import spacy
 nlp = spacy.load("pt_core_news_sm")
 
 
-text = input("Type a text: ")
+text = input("Your text: ")
 text = nlp(text)
 
 token_list = [token.text for token in text if not token.is_punct]
